@@ -1,0 +1,92 @@
+### 2. CSS File: `styles.css`
+```css
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+}
+
+.poster {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto auto 1fr auto auto;
+  gap: 20px;
+  padding: 32px;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  width: 100px;
+}
+
+.header {
+  grid-column: 1 / span 3;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #004080;
+}
+
+.header h2 {
+  margin: 8px 0 24px;
+  font-size: 20px;
+  font-weight: normal;
+  color: #333;
+}
+
+.team {
+  grid-column: 1 / span 3;
+  border: 2px solid #004080;
+  background-color: #e8f0fe;
+  padding: 16px;
+  font-size: 14px;
+  color: #004080;
+  border-radius: 4px;
+}
+
+.intro, .methods, .findings, .conclusions, .literature, .ack, .contact {
+  border-radius: 4px;
+  padding: 16px;
+  font-size: 14px;
+  background-color: #fafbfd;
+  border: 1px solid #cbd6ea;
+}
+
+.intro { grid-column: 1; grid-row: 3; }
+.methods { grid-column: 1; grid-row: 4; }
+.findings { grid-column: 2; grid-row: 3 / span 2; }
+.conclusions { grid-column: 3; grid-row: 3 / span 2; }
+.literature { grid-column: 1 / span 2; grid-row: 5; font-size: 12px; }
+.ack { grid-column: 3; grid-row: 5; font-size: 12px; }
+.contact { grid-column: 3; grid-row: 6; font-size: 12px; }
+
+h3 {
+  margin-top: 0;
+  color: #004080;
+  font-size: 18px;
+}
+
+ul {
+  margin: 8px 0 0 16px;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+a {
+  color: #004080;
+  text-decoration: none;
+}
+```
